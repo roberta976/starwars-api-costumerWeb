@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roberta Atividade</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <div class="tabela">
+        <a class="btn-floating btn-large waves-effect blue lighten-1"><i id="abrir-modal" class="material-icons">add</i></a>
+        <h1 class="texto">API STARWARS</h1>
+        <table id="tabela">
+            <thead>   
+                <th>Nome</th>
+                <th>Gênero</th>
+
+            </thead>
+        </table>
+    </div>
+    <div class="modal-content">
+        <div id="modal-inserir" class="modal-inserir">
+            <a class="fechar-id"><i class="material-icons">clear</i></a>
+            
+            <input id="nomePersonagem" type="text" class="personagem" placeholder="Digite o nome do personagem">
+            <input id="data"type="text" class="personagem" placeholder="Digite o gênero">
+            <a id="salvar"class="btn">Salvar</a>
+        </div>
+    
+    </div>
+    
+    <script src="/main.js"></script>
+</body>
+</html>

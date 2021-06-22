@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Wallpoet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f1f1f1;
+}
+.content{
+    margin: 1rem 2rem;
+    display: block;
+}
+.tabela{
+    margin: 1rem;
+    padding: 1rem;
+    display: block;
+    font-family: "Poppins";
+    /* border: 2px solid #6abadf; */
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 
+    0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+    border-radius: 0.4rem;
+ 
+}
+#tabela{
+    background-color: #ffffff;
+    
+}
+thead{
+    background-color: #ffffff;
+}
+th{
+    font-size: 1.3rem;
+}
+td{
+    border: none;
+}
+
+.texto{
+    font-family: "Wallpoet", sans-serif;
+    font-size: 2rem;
+    font-family: 700;
+    text-align: center;
+}
+.modal-content{
+    width: 100vw;
+    height: 100vh;
+    background: #00000080;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-inserir{
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 55%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 0.3rem;
+    will-change: top, opacity;
+    background: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    z-index: 3000;
+} 
+
+.fechar-id{
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.modal-content.mostrar{
+    display: flex;
+}
+/* .modal-content.fechar{
+    display: none;
+} */
+.personagem{
+    color: #1d1c1ca4;
+    border-bottom: 1px solid #9c959c;
+    font-family: "Poppins", sans-serif;
+}
+#nomePersonagem:placeholder{
+    color: #70707075;
+}
+@keyframes modal{
+    from{
+        opacity: 0;
+        transform: translate3d(0,-60px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+/* @keyframes modalFechar{
+    from{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+    to{
+        opacity: 0;
+        transform: translate3d(0,-60px, 0);
+    }
+} */
+.mostrar .modal-inserir{
+    animation: modal .3s;
+}
+/* .fechar .modal-inserir{
+    animation: modalFechar .3s;
+} */
+#salvar{
+    background-color: #DFDFDF ;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #9F9F9F;
+    cursor: default;
+}
